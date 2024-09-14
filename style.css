@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.navbar {
+    background-color: #FF1493 !important;
+    color: #FFFACD !important;
+    height: 62px;
+    position:sticky;
+  }
+  
+  .btn {
+    background-color: blue;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 30px; /* Adjust padding for better touch targets */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center; /* Center text within the button */
+    border: none; /* Remove default border, if any */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    cursor: pointer; /* Shows a pointer cursor on hover */
+    transition: background-color 0.3s; 
+    position: absolute;
+    
+  }
+  
+  .btn:hover {
+    background-color: darkblue; /* Change color on hover for better UX */
+  }
+  
+  .navbar-nav {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-brand {
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+.carousel-item img {
+    height: 100vh; /* Adjust this value as needed */
+    object-fit: cover;
+}
+.carousel-caption { 
+    background: rgba(0, 0, 0, 0.5); /* Slightly dark background for readability */
+     border-radius: 5px;
+    padding: 10px;
+} 
+ .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Change control icon background color */
+     border-radius: 50%;
+} 
+.carousel-caption{
+    /* background-color: aquamarine; */
+    margin-bottom: 250px;
+    background: none;
+}
+.carousel-caption h5{
+    color:rgba(245, 238, 238, .7);
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 5px;
+}
+.carousel-caption h1{
+    padding-top: 10px;
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+}
+#guest{
+    color:#FF1493; 
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.h h4{
+    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+    font-family: 'Roboto', sans-serif; /* Font family for the heading */
+    font-size: 2.8rem; /* Adjust font size as needed */
+    text-align: center; /* Center align the text */
+    margin-top: 40px ;
+    font-weight: bold;
+}
+
+h4::after {
+    content: ''; 
+     position: absolute;
+    left: 400px; 
+    right: 400px; 
+    top: 50%; 
+    height: 5px; 
+    background-color:#FF1493; 
+    transform: translateY(-70%);
+    text-decoration: none;
+}  
+.aboutus img{
+    height: 500px;
+    width: 400px;
+    margin: 50px 130px;
+    border-radius: 10px solid #A9A9A9;
+
+   
+}
+.aboutus h5{
+    position: absolute;
+    left: 600px; /* Start from the left edge */
+   top:880px;
+   font-weight: bold;
+   font-size: 1.5rem;
+   font-family: 'Roboto', sans-serif;
+}
+.aboutus p{
+    position: absolute;
+    left: 600px; /* Start from the left edge */
+   top:930px;
+   width: 600px;
+   color:#708090;
+   /* font-weight: bold; */
+   font-size: 1.2rem;
+   font-family: 'Roboto', sans-serif;
+}
+#address{
+    position: absolute;
+    left: 600px; /* Start from the left edge */
+   top:1180px;
+   width: 600px;
+   color: #FF1493;
+   font-weight: bold;
+   font-size: 1.2rem;
+   font-family: 'Roboto', sans-serif;
+}
+.aboutus button{
+    position: absolute;
+    left: 600px; /* Start from the left edge */
+   top:1280px;
+   width: 150px;
+   background-color:#D2691E;
+   border-radius: 10px solid #D2691E;
+   font-weight: bold;
+   font-size: 1.2rem;
+   padding: 10px 10px;
+   border-radius: 10px;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   border: none;
+}
+.cards{
+    display: inline-flex;
+    margin: 30px 170px;
+    justify-content: space-around;
+    gap: 2.3rem;
+    height:500px;
+}
+/* General card styling */
+.card {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 1rem; /* Space between cards */
+    text-align:left;
+    margin-left:5px;
+    }
+  
+  /* Card image styling */
+  .card-img-top {
+    width: 100%; /* Make image stretch to fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 1rem; /* Space inside the card body */
+  }
+  
+  /* Card title styling */
+  .card-title {
+    font-size: 1.25rem; /* Larger font size for the title */
+    margin-bottom: 0.75rem; /* Space below the title */
+    font-weight: bold; /* Bold text for the title */
+  }
+  
+  /* Card text styling */
+  .card-text {
+    font-size: 1rem; /* Standard font size for the text */
+    color: #555; /* Slightly lighter gray for the text */
+    margin-bottom: 1rem; /* Space below the text */
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    display: inline-block; /* Ensure button is inline with text */
+    font-size: 1rem; /* Standard button font size */
+    font-weight: bold; /* Bold text for the button */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    padding: 0.5rem 1rem; /* Space inside the button */
+    text-align: center; /* Center align text in button */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Button hover effect */
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+  .icons{
+    position: absolute;
+   display: inline-flex;
+   top:170px;
+   left:180px;
+   height: 35px;
+   width: 35px;
+  }
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrollbars */
+    margin-top:50px; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+.services img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container while preserving aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+.services h5,h3, ul{
+    position: absolute;
+}
+.services h5{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    top:2080px;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #FF1493;
+    width: 20%;
+    border-radius: 20px;
+}
+.services h3{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    top:2150px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.content{
+    position: absolute;
+    top:2200px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    align-items: center; /* Align items vertically in the center */
+    gap: 15px;
+    color: crimson;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content img{
+    max-width: 50px; /* Set a max width for images */
+    height: auto;
+    margin-left: 120px;
+}
+.content.c1{
+    display: flex;
+    align-items: center; /* Align text vertically in the center */
+    margin-left: 500px; 
+    color: #FF1493;
+}
+.column {
+    display:flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between image-text pairs */
+    text-align: center;
+    padding: auto;
+    margin-left: 20px;
+    }
+    
+   /* Left to Right Animation */
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.booking {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 2465px;
+    background-color: #FF1493;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 50%;
+    height: 200px;
+    margin-top: 15px;
+    padding-top: 10px;
+    animation: moveRight 2s ease-out; /* Move from left to right */
+}
+
+/* Zoom In Effect for Numbers */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.count {
+    font-size: 2em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #fff; /* Adjust color as needed */
+    margin: 0;
+    animation: zoomIn 1s ease-out; /* Zoom in effect */
+}
+
+/* Hover Effect for .booking */
+.booking:hover {
+    background-color: #ff69b4; /* Change background color on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the element on hover */
+    transition: all 0.1s ease; /* Smooth transition for hover effect */
+}
+
+/* Optional: Smooth Transition for count when counting */
+.count {
+    transition: transform 0.1s ease;
+}
+.gallery {
+     padding: 10px;
+     margin-bottom: 100px;
+}
+
+.gallery h3 {
+    font-size: 3em; 
+    color: #FF1493;
+    left:550px;
+    margin: 20px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/* Base styling for images in each row */
+.row1 img,
+.row2 img,
+.row3 img {
+    width: 20%; /* Adjust as needed */
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition for filter and transform */
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+/* Default grayscale effect for images */
+.row1 img,
+.row2 img,
+.row3 img {
+    filter: grayscale(100%); /* Converts image to grayscale */
+}
+
+/* Hover effect to reveal the colorful image */
+.row1 img:hover,
+.row2 img:hover,
+.row3 img:hover {
+    filter: grayscale(0%); /* Removes grayscale to reveal the original image color */
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+/* General styling for the contact form container */
+.contact {
+    background-color: #FF1493; /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the form */
+    border-radius: 8px; /* Optional: rounded corners */
+    max-width: 600px; /* Optional: limit the width of the form */
+    top:3620px;
+    left:500px;
+    position: absolute;
+}
+
+/* Styling for the form labels */
+.contact label {
+    display: block; /* Make labels block-level for better spacing */
+    font-size: 18px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Space below the label */
+    font-weight: bolder; /* Bold text */
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for input fields and textarea */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="number"],
+.contact input[type="date"],
+.contact textarea {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 10px; /* Space below each input field */
+    border: 1px solid #FF1493 ; /* Border color */
+    border-radius: 4px; /* Rounded corners for input fields */
+    background-color:white; /* Background color of input fields */
+    color: black; /* Text color inside input fields */
+    box-sizing: border-box;
+    
+}
+
+/* Styling for textarea specifically */
+.contact textarea {
+    resize: vertical; /* Allow resizing only vertically */
+}
+
+/* Styling for the submit button */
+.contact button {
+    background-color:white; /* Button background color */
+    color:#FF1493; /* Text color of the button */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* Hover effect for the submit button */
+.contact button:hover {
+    background-color:blueviolet; /* Light pink background on hover */
+    color:white; /* Darker pink text on hover */
+}
+/* General styling for the contact info container */
+.contactinfo {
+    background-color: #f8f9fa; /* Light background color for contrast */
+    color: #333; /* Dark text color for readability */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners for the container */
+    max-width: 300px; /* Limit the width of the container */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     position: absolute;
+     left: 240px;
+     height:480px;
+
+    }
+
+/* Styling for the heading */
+.contactinfo h3 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 50px; /* Space below the heading */
+    color: #ff69b4; /* Pink color for the heading */
+    text-align: center; /* Center the heading text */
+    margin-left: 50px;
+    position: absolute;
+    padding-bottom: 100px;
+    
+}
+
+/* Styling for individual contact info sections */
+.contactinfo .c1 {
+    display: flex; /* Flexbox layout for alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Space between contact info items */
+}
+
+/* Styling for images in the contact info */
+.contactinfo .c1 img {
+    width: 24px; /* Set a consistent size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Styling for the text in contact info */
+.contactinfo .c1 p {
+    margin-top: 20px; /* Remove default margin */
+    font-size: 16px; /* Font size for the contact text */
+    top: 20px;
+    padding-top: 2px;
+}
+
+/* Styling for links */
+.contactinfo .c1 a {
+    cursor: default;
+    color: black; /* Pink color for links */
+    text-decoration: none; 
+    
+    
+}
+
+/* Hover effect for links */
+.contactinfo .c1 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.ci-icons {
+    display: inline-flex; /* Flexbox layout for icons */
+    justify-content: center; /* Center the icons horizontally */
+    gap: 10px; /* Space between icons */
+    margin-top: 20px; /* Space above the icons */
+    position: absolute;
+   left:60px;
+   top: 410px;
+}
+
+/* Styling for the social media icons */
+.ci-icons img {
+    width: 20px; /* Set a consistent size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s, opacity 0.3s;
+    
+}
+
+/* Hover effect for social media icons */
+.ci-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    opacity: 0.8; /* Slightly fade the icon on hover */
+}
+.c2{
+    margin-top: 30px;
+}
+.map{
+    position: absolute;
+    display: flex;
+    top:4150px;
+   }
+.map iframe{
+    width: 1343px;
+    height: 400px;
+}
+.footer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color:#FF1493; /* Background color for the footer */
+    border-top: 2px solid #ccc; /* Optional border at the top of the footer */
+    flex-wrap: wrap;
+    position: relative;
+    top: 930px;
+    width: 100%;
+}
+  
+  .footer-content {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Adjust as needed */
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer-content a {
+    color: black; /* Link color */
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    color: #333;
+  }
+  
+  .footer-content button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3498db; /* Button background color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .footer-content button:hover {
+    background-color: #2980b9; /* Button hover color */
+  }
+  
+  .footer-icon {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-icon img {
+    width: 24px; /* Adjust size of icons */
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .footer-content p {
+    margin: 0 0 10px 0;
+  }
+  .lastfooter {
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Font size for the text */
+    border-top: 1px solid #444; 
+    position: relative;
+    top: 930px;
+  }
+  
+  .lastfooter p {
+    margin: 0; /* Remove default margin */
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: block;
+        padding: 0;
+    }
+
+    .btn {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+
+    .h h4 {
+        font-size: 2rem;
+    }
+
+    h4::after {
+        left: 100px;
+        right: 100px;
+    }
+}
+
+/* For devices with a max width of 480px */
+@media (max-width: 480px) {
+    .navbar-nav {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 5px 15px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .h h4 {
+        font-size: 1.8rem;
+    }
+
+    h4::after {
+        left: 50px;
+        right: 50px;
+    }
+}
+  
+
+
+
+
+
+
+
+
+    
+  
